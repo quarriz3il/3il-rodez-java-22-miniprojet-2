@@ -1,2 +1,5 @@
 Quelle structure de données pourrait être utilisée pour stocker les relations entre les nœuds du graphe et les informations associées à ces relations, comme les coûts des arêtes ?
 Des lists Map
+
+Pourquoi pensez-vous que la création d'une interface est une bonne pratique dans ce contexte ?
+Car lorsque l'on souhaitera utiliséed'autre algorithme on pourra modifié la méthode car elle ne réagira pas de la même manière

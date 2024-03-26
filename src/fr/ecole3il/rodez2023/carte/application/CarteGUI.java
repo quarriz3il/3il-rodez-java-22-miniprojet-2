@@ -1,5 +1,13 @@
 package fr.ecole3il.rodez2023.carte.application;
 
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import fr.ecole3il.rodez2023.carte.chemin.algorithmes.AlgorithmeChemin;
+import fr.ecole3il.rodez2023.carte.elements.Carte;
+import fr.ecole3il.rodez2023.carte.elements.Case;
+
 /**
  * @author p.roquart
  * voilà
