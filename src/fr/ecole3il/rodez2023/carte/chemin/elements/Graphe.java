@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import fr.ecole3il.rodez2023.carte.elements.Case;
+
 public class Graphe<E>
 {
     private List<Noeud<E>> noeuds;
@@ -87,5 +89,24 @@ public class Graphe<E>
             return new ArrayList<>();
         }
         return noeud.getVoisin();
+    }
+
+    /**
+     * Récupère le noeud situé aux coordonnées spécifiées.
+     * 
+     * @param x La coordonnée x du noeud.
+     * @param y La coordonnée y du noeud.
+     * @return Le noeud situé aux coordonnées spécifiées, ou null s'il n'existe pas.
+     */
+    public Noeud<E> getNoeud(int x, int y) {
+        for (Noeud<E> noeud : noeuds) {
+            if (noeud.getValeur() instanceof Case) {
+                Case caseValue = (Case) noeud.getValeur();
+                if (caseValue.getX() == x && caseValue.getY() == y) {
+                    return noeud;
+                }
+            }
+        }
+        return null;
     }
 }
